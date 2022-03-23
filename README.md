@@ -1,6 +1,6 @@
 # PasswordManager
 
-Version 1.0.4 19.03.2022
+Version 1.0.4 23.03.2022
 
 Beschreibung (Deutsch): http://androidcrypto.bplaced.net/passwordmanager/
 
