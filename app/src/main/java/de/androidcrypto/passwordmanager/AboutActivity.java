@@ -1,5 +1,6 @@
 package de.androidcrypto.passwordmanager;
 
+import android.content.pm.ApplicationInfo;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
@@ -20,7 +21,14 @@ public class AboutActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         TextView tv = (TextView) findViewById(R.id.appVersion);
-        tv.setText(getResources().getString(R.string.appVersionData));
+        // check if app is in debug or release mode
+        boolean isDebuggable =  ( 0 != ( getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE ) );
+        if (isDebuggable) {
+            tv.setText(getResources().getString(R.string.appVersionData) + " (debug)");
+        } else {
+            tv.setText(getResources().getString(R.string.appVersionData) + " (release)");
+        }
+
         TextView tv3 = (TextView) findViewById(R.id.projectpage);
         tv3.setMovementMethod(LinkMovementMethod.getInstance());
         TextView tv4 = (TextView) findViewById(R.id.sourcecodepage);

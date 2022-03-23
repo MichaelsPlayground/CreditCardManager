@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/michaelfehr/Desktop/AndroidScreenShots/AndroidCrypto keystore/androidcrypto_keystore_2022_03-23')
+            storePassword 'ackeystore'
+            keyPassword 'ackeystore'
+            keyAlias 'key20220323'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
