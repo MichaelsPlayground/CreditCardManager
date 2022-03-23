@@ -10,6 +10,8 @@ Description (English): http://androidcrypto.bplaced.net/passwordmanager-en/
 
 ```
 
+Download the release version of the app (Version 1.0.4 build 18): https://github.com/AndroidCrypto/PasswordManagerV104Release/releases/tag/1.0.4
+
 dependencies:
 ```plaintext
 implementation "androidx.security:security-crypto:1.0.0"
