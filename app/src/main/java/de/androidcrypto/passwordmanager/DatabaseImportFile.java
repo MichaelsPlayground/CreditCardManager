@@ -65,6 +65,9 @@ public class DatabaseImportFile extends AppCompatActivity {
                         // split string into parts
                         String[] fields = dataImportLines[i].split("##");
                         // Kategorie##Beschreibung##Login Name##Login Passwort##Favorit
+                        // the following line is FALSE and just for importing the WRONG export ONE time
+                        //dbHandler.addNewEntry(fields[0], fields[1], fields[2], fields[3], fields[4]);
+                        // the following line is the correct one
                         dbHandler.addNewEntry(fields[1], fields[2], fields[3], fields[0], fields[4]);
                     }
                 }

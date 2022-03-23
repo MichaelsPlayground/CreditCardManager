@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements ILockableActivity
     // https://github.com/IvBaranov/MaterialFavoriteButton
     // https://stackoverflow.com/questions/35866370/implementing-add-to-favourite-mechanism-in-recyclerview
 
+
     // pbkdf2withhmac256 ist erst ab SDK 26 verfügbar, daher setting min sdk 26
 
     // add in gradle.build (module)

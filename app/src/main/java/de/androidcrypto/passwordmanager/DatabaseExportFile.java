@@ -68,7 +68,16 @@ public class DatabaseExportFile extends AppCompatActivity {
                 // here we are generating the export data
                 String unencryptedExportData = "";
                 for (int l = 0; l < entryModelArrayList.size(); l++) {
-                    String exportLine = entryModelArrayList.get(l).getEntryName() + "##" +
+                    // Kategorie##Beschreibung##Login Name##Login Passwort##Favorit
+                    String exportLine = entryModelArrayList.get(l).getEntryCategory() + "##" +
+                            entryModelArrayList.get(l).getEntryName() + "##" +
+                            entryModelArrayList.get(l).getEntryLoginName() + "##" +
+                            // note this data (loginPassword) is encrypted
+                            //entryModelArrayList.get(l).getEntryLoginPassword() + "##" +
+                            Cryptography.decryptStringAesGcmFromBase64(entryModelArrayList.get(l).getEntryLoginPassword()) + "##" +
+                            entryModelArrayList.get(l).getEntryFavourite();
+                    // falsche reihenfolge, do not use this in PRODUCTION anymore
+                    String exportLineWrong = entryModelArrayList.get(l).getEntryName() + "##" +
                             entryModelArrayList.get(l).getEntryLoginName() + "##" +
                             // note this data (loginPassword) is encrypted
                             //entryModelArrayList.get(l).getEntryLoginPassword() + "##" +
@@ -77,7 +86,7 @@ public class DatabaseExportFile extends AppCompatActivity {
                             entryModelArrayList.get(l).getEntryFavourite();
                     unencryptedExportData = unencryptedExportData + exportLine + "\n";
                 }
-                System.out.println("number of exported items: " + entryModelArrayList.size());
+                //System.out.println("number of exported items: " + entryModelArrayList.size());
                 //etData.setText(unencryptedExportData);
                 String encryptedFileContent = Cryptography.encryptDatabaseAesGcmToBase64(passphrase, unencryptedExportData);
                 etData.setText(encryptedFileContent);
