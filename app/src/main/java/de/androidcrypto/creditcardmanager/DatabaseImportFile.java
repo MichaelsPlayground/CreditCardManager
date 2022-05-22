@@ -1,4 +1,4 @@
-package de.androidcrypto.passwordmanager;
+package de.androidcrypto.creditcardmanager;
 
 import android.app.Activity;
 import android.content.Context;

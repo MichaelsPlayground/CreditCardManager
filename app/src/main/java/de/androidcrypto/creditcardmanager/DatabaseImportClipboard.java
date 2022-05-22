@@ -1,4 +1,4 @@
-package de.androidcrypto.passwordmanager;
+package de.androidcrypto.creditcardmanager;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -85,7 +84,7 @@ public class DatabaseImportClipboard extends AppCompatActivity {
                     // proceed with decryption
                 } else {
                     // todo remove prints or toast or SnackBar
-                    System.out.println("ciphertext file is not for passwordmanager");
+                    System.out.println("ciphertext file is not for creditcardmanager");
                     System.exit(1);
                 }
                 // read salt

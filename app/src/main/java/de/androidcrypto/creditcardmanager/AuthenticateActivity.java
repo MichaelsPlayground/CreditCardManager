@@ -1,4 +1,4 @@
-package de.androidcrypto.passwordmanager;
+package de.androidcrypto.creditcardmanager;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -11,7 +11,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 
 import java.util.concurrent.Executor;
 

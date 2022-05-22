@@ -1,4 +1,4 @@
-package de.androidcrypto.passwordmanager;
+package de.androidcrypto.creditcardmanager;
 
 import androidx.biometric.BiometricManager;
 import androidx.biometric.BiometricPrompt;

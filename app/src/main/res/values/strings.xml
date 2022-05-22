@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">Passwort Manager</string>
+    <string name="app_name">CreditCard Manager</string>
     <string name="search">suche einen Eintrag</string>
     <string name="addEntry">hinzufügen</string>
 
     <string name="action_help">Hilfe zum Programm</string>
     <string name="action_licenses">Verwendete Bibliotheken und Lizenzen</string>
     <string name="appVersion">Version</string>
-    <string name="appVersionData">1.0.4.18</string>
+    <string name="appVersionData">1.0.0.01</string>
     <!-- appVersionData auch in build.gradle app/module ändern ! -->
     <string name="titleAbout">Über diese App</string>
     <string name="programmer">Michael Fehr</string>
     <!-- <string name="projectPage"><a href="http://androidcrypto.bplaced.net/android/qrcode.html">http://java-crypto.bplaced.net/android/impfzertifikat.html</a></string> -->
-    <string name="projectPage"><a href="http://androidcrypto.bplaced.net/passwordmanager/">http://androidcrypto.bplaced.net/passwordmanager/</a></string>
+    <string name="projectPage"><a href="http://androidcrypto.bplaced.net/passwordmanager/">http://androidcrypto.bplaced.net/creditcardmanager/</a></string>
     <string name="infoProjectPage">Projektseite</string>
     <string name="programmername">Programmierer</string>
     <string name="appiconname">App Icon</string>

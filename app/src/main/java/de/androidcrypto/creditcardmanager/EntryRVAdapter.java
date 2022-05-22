@@ -1,4 +1,4 @@
-package de.androidcrypto.passwordmanager;
+package de.androidcrypto.creditcardmanager;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

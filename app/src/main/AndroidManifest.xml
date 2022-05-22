@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.androidcrypto.passwordmanager">
+    package="de.androidcrypto.creditcardmanager">
 
     <application
-        android:name=".App"
+        android:name="de.androidcrypto.creditcardmanager.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,19 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <!-- <activity android:name=".AuthenticateActivity"> -->
-        <activity android:name=".MainActivity">
+        <activity android:name="de.androidcrypto.creditcardmanager.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddEntryActivity" />
-        <activity android:name=".UpdateEntryActivity" />
-        <activity android:name=".DatabaseImportClipboard" />
-        <activity android:name=".DatabaseImportFile" />
-        <activity android:name=".DatabaseExportFile" />
-        <activity android:name=".MasterkeyExportClipboard" />
-        <activity android:name=".AboutActivity" />
+        <activity android:name="de.androidcrypto.creditcardmanager.AddEntryActivity" />
+        <activity android:name="de.androidcrypto.creditcardmanager.UpdateEntryActivity" />
+        <activity android:name="de.androidcrypto.creditcardmanager.DatabaseImportClipboard" />
+        <activity android:name="de.androidcrypto.creditcardmanager.DatabaseImportFile" />
+        <activity android:name="de.androidcrypto.creditcardmanager.DatabaseExportFile" />
+        <activity android:name="de.androidcrypto.creditcardmanager.MasterkeyExportClipboard" />
+        <activity android:name="de.androidcrypto.creditcardmanager.AboutActivity" />
      <!--   <activity android:name=".MainActivity"/> -->
     </application>
 

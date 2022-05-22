@@ -1,8 +1,4 @@
-package de.androidcrypto.passwordmanager;
-
-import android.content.DialogInterface;
-
-import androidx.appcompat.app.AlertDialog;
+package de.androidcrypto.creditcardmanager;
 
 public class Utils {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package de.androidcrypto.passwordmanager;
+package de.androidcrypto.creditcardmanager;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -119,11 +119,11 @@ public class MainActivity extends AppCompatActivity implements ILockableActivity
                 entryModelFilteredArrayList.add(entryModelArrayList.get(l));
             }
         }
-        entryRVAdapter = new EntryRVAdapter(entryModelFilteredArrayList, de.androidcrypto.passwordmanager.MainActivity.this);
+        entryRVAdapter = new EntryRVAdapter(entryModelFilteredArrayList, de.androidcrypto.creditcardmanager.MainActivity.this);
         entriesRV = findViewById(R.id.idRVEntries);
 
         // setting layout manager for our recycler view.
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(de.androidcrypto.passwordmanager.MainActivity.this, RecyclerView.VERTICAL, false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(de.androidcrypto.creditcardmanager.MainActivity.this, RecyclerView.VERTICAL, false);
         entriesRV.setLayoutManager(linearLayoutManager);
 
         // setting our adapter to recycler view.
@@ -176,12 +176,12 @@ public class MainActivity extends AppCompatActivity implements ILockableActivity
                     }
 
                     // original: courseRVAdapter = new CourseRVAdapter(courseModalArrayList, de.androidcrypto.sqllitetutorial1.ViewFilteredCourses.this);
-                    entryRVAdapter = new EntryRVAdapter(entryModelFilteredArrayList, de.androidcrypto.passwordmanager.MainActivity.this);
+                    entryRVAdapter = new EntryRVAdapter(entryModelFilteredArrayList, de.androidcrypto.creditcardmanager.MainActivity.this);
 
                     entriesRV = findViewById(R.id.idRVEntries);
 
                     // setting layout manager for our recycler view.
-                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(de.androidcrypto.passwordmanager.MainActivity.this, RecyclerView.VERTICAL, false);
+                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(de.androidcrypto.creditcardmanager.MainActivity.this, RecyclerView.VERTICAL, false);
                     entriesRV.setLayoutManager(linearLayoutManager);
 
                     // setting our adapter to recycler view.
